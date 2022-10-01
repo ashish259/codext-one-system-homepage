@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+/* Header starts here */
+ul {
+  list-style: none;
+}
+[alt="logo"]{
+  width: 130px;
+}
+header {
+  font-weight: 600;
+  background-color: rgb(134, 23, 245);
+  color: #ffffff;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  width: 40vw;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn {
+  font-weight: 700;
+  background-color: aqua;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+}
+/* Header Ends Here */
+
+/* Hero section starts here */
+.hero-section {
+  background-color: rgb(134, 23, 245);
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.text-section{
+  padding: 20px;
+  height: 75%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-section h1{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.text-section p{
+  font-size: 20px;
+}
+.hero-img{
+  padding: 20px;
+  height: 75%;
+  width: 55%;
+}
+.hero-img img{
+  width: 80%;
+}
+/* Section-02 */
+.sec-02 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sec-02 .text-section {
+  padding: 10px;
+  width: 25vw;
+}
+.sec-02 .text-section h1 {
+  font-size: 1.8em;
+}
+.sec-02 .text-section p {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgba(133, 134, 135, 0.931);
+  margin: 1vh 0;
+}
+.sec-02-img {
+  height: 85vh;
+  margin: 20px;
+  margin-top: 5vh;
+  width: 50vw;
+}
+.sec-02-img img {
+  height: 85vh;
+}
+.heading h1 {
+  margin: 5vh auto;
+  text-align: center;
+  width: 30vw;
+}
+.cards {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.cards img {
+  margin: 10px;
+  height: 60%;
+  width: 90%;
+}
+.card {
+  margin: 10px;
+  width: 22vw;
+  border-radius: 25px;
+  box-shadow: 20px -20px 15px 1px rgba(182, 179, 179, 0.654);
+}
+.card .text {
+  padding: 10px;
+  background-color: rgb(134, 23, 245);
+  color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+/* Media Query */
+@media(max-width: 850px) {
+  /* Navbar */
+  nav{
+    display: none;
+  }
+  [alt="hamburger"]{
+    display: block;
+  }
+  /* Hero Section */
+  .hero-section{
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+  }
+  .hero-img{
+   width: fit-content;
+   height: fit-content;
+   padding: 5px;
+  }
+  .hero-img img{
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .text-section{
+    width: 85%;
+    margin: 0 auto;
+    height: fit-content;
+    text-align: center;
+  }
+  .text-section h1{
+    font-size: 35px;
+    margin-top: 10px;
+  }
+  .text-section p{
+    font-size: 20px;
+  }
+  /* Section-02 */
+  .sec-02{
+    flex-direction: column;
+  }
+  .sec-02-img{
+    width: 90%;
+    height: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  .sec-02 img{
+    width: fit-content;
+    height: fit-content;
+  }
+  .sec-02 .text-section{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .sec-02 .text-section h1 {
+    font-size: 30px;
+}
+  .sec-02 .text-section p {
+    font-size:10px;
+    margin: 1vh 0;
+  }
+
+  .sec-03 .heading h1{
+    width: fit-content;
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .card{
+    margin: 20px auto;
+    width: 75%;
+  }
+  .card .text {
+    padding: 25px;
+    text-align: center;
+    margin: 5px auto;
+  }
+.cards img {
+  margin: 5px auto;
+  width: 63%;
+  margin: 0 auto;
+  display: block;
+}
+}
